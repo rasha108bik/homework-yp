@@ -1,0 +1,231 @@
+121
+Stop Tolstopaltsevo: 55.611087, 37.20829, 3900m to Marushkino
+Stop Marushkino: 55.595884, 37.209755, 9900m to Rasskazovka, 100m to Marushkino
+Stop Rasskazovka: 55.632761, 37.333324, 9500m to Marushkino
+Stop Biryulyovo Zapadnoye: 55.574371, 37.6517, 7500m to Rossoshanskaya ulitsa, 1800m to Biryusinka, 2400m to Universam
+Stop Biryusinka: 55.581065, 37.64839, 750m to Universam
+Stop Universam: 55.587655, 37.645687, 5600m to Rossoshanskaya ulitsa, 900m to Biryulyovo Tovarnaya
+Stop Biryulyovo Tovarnaya: 55.592028, 37.653656, 1300m to Biryulyovo Passazhirskaya
+Stop Biryulyovo Passazhirskaya: 55.580999, 37.659164, 1200m to Biryulyovo Zapadnoye
+Stop Rossoshanskaya ulitsa: 55.595579, 37.605757
+Stop Prazhskaya: 55.611678, 37.603831
+Stop Prazhskaya: 55.611678, 37.603831
+Stop Tolstopaltsevo1: 55.611087, 37.20829, 3900m to Marushkino1
+Stop Marushkino1: 55.595884, 37.209755, 9900m to Rasskazovka1, 100m to Marushkino1
+Stop Rasskazovka1: 55.632761, 37.333324, 9500m to Marushkino1
+Stop Biryulyovo Zapadnoye1: 55.574371, 37.6517, 7500m to Rossoshanskaya ulitsa1, 1800m to Biryusinka1, 2400m to Universam
+Stop Biryusinka1: 55.581065, 37.64839, 750m to Universam1
+Stop Universam1: 55.587655, 37.645687, 5600m to Rossoshanskaya ulitsa1, 900m to Biryulyovo Tovarnaya1
+Stop Biryulyovo Tovarnaya1: 55.592028, 37.653656, 1300m to Biryulyovo Passazhirskaya1
+Stop Biryulyovo Passazhirskaya1: 55.580999, 37.659164, 1200m to Biryulyovo Zapadnoye1
+Stop Rossoshanskaya ulitsa1: 55.595579, 37.605757
+Stop Prazhskaya1: 55.611678, 37.603831
+Stop Tolstopaltsevo2: 55.611087, 37.20829, 3900m to Marushkino2
+Stop Marushkino2: 55.595884, 37.209755, 9900m to Rasskazovka2, 50m to Marushkino2
+Stop Rasskazovka2: 55.632761, 37.333324, 9500m to Marushkino2
+Stop Biryulyovo Zapadnoye2: 55.574371, 37.6517, 7500m to Rossoshanskaya ulitsa2, 1800m to Biryusinka2, 2400m to Universam
+Stop Biryusinka2: 55.581065, 37.64839, 750m to Universam2
+Stop Universam2: 55.587655, 37.645687, 5600m to Rossoshanskaya ulitsa2, 900m to Biryulyovo Tovarnaya2
+Stop Biryulyovo Tovarnaya2: 55.592028, 37.653656, 1300m to Biryulyovo Passazhirskaya2
+Stop Biryulyovo Passazhirskaya2: 55.580999, 37.659164, 1200m to Biryulyovo Zapadnoye2
+Stop Rossoshanskaya ulitsa2: 55.595579, 37.605757
+Stop Prazhskaya2: 55.611678, 37.603831
+Bus 1: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 2: Biryulyovo Zapadnoye > Biryusinka > Universam > Biryulyovo Tovarnaya > Biryulyovo Passazhirskaya > Biryulyovo Zapadnoye
+Bus 3: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 4: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 5: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 6: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 7: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 8: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 9: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 10: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 11: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 12: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 13: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 14: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 15: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 16: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 17: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 18: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 19: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 20: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 21: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 22: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 23: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 24: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 25: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 26: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 27: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 28: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 29: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 30: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 31: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 32: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 33: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 34: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 35: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 36: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 37: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 38: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 39: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 40: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 41: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 42: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 43: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 44: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 45: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 46: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 47: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 48: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 49: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 50: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 51: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 52: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 53: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 54: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 55: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 56: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 57: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 58: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 59: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 60: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 61: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 62: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 63: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 64: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 65: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 66: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 67: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 68: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 69: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 70: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 71: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 72: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 73: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 74: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 75: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 76: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 77: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 78: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 79: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 80: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 81: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 82: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 83: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 84: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+Bus 85: Tolstopaltsevo2 - Marushkino2 - Marushkino2 - Rasskazovka2
+Bus 86: Biryulyovo Zapadnoye2 > Biryusinka2 > Universam2 > Biryulyovo Tovarnaya2 > Biryulyovo Passazhirskaya2 > Biryulyovo Zapadnoye2
+Bus 87: Tolstopaltsevo - Marushkino - Marushkino - Rasskazovka
+Bus 88: Biryulyovo Zapadnoye > Universam > Rossoshanskaya ulitsa > Biryulyovo Zapadnoye
+Bus 99: Tolstopaltsevo1 - Marushkino1 - Marushkino1 - Rasskazovka1
+Bus 100: Biryulyovo Zapadnoye1 > Biryusinka1 > Universam1 > Biryulyovo Tovarnaya1 > Biryulyovo Passazhirskaya1 > Biryulyovo Zapadnoye1
+108
+Bus 256
+Bus 750
+Bus 751
+Stop Samara
+Stop Prazhskaya
+Stop Biryulyovo Zapadnoye
+Bus 256A
+Bus 750A
+Bus 751A
+Stop Samara1
+Stop Prazhskaya1
+Stop Biryulyovo Zapadnoye1
+Bus 256B
+Bus 750B
+Bus 751B
+Stop Samara2
+Stop Prazhskaya2
+Stop Biryulyovo Zapadnoye2
+Bus 1
+Bus 2
+Bus 3
+Bus 4
+Bus 5
+Bus 6
+Bus 7
+Bus 8
+Bus 9
+Bus 10
+Bus 11
+Bus 12
+Bus 13
+Bus 14
+Bus 15
+Bus 16
+Bus 17
+Bus 18
+Bus 19
+Bus 20
+Bus 21
+Bus 22
+Bus 23
+Bus 24
+Bus 25
+Bus 26
+Bus 27
+Bus 28
+Bus 29
+Bus 30
+Bus 31
+Bus 32
+Bus 33
+Bus 34
+Bus 35
+Bus 36
+Bus 37
+Bus 38
+Bus 39
+Bus 40
+Bus 41
+Bus 42
+Bus 43
+Bus 44
+Bus 45
+Bus 46
+Bus 47
+Bus 48
+Bus 49
+Bus 50
+Bus 51
+Bus 52
+Bus 53
+Bus 54
+Bus 55
+Bus 56
+Bus 57
+Bus 58
+Bus 59
+Bus 60
+Bus 71
+Bus 72
+Bus 73
+Bus 74
+Bus 75
+Bus 76
+Bus 77
+Bus 78
+Bus 79
+Bus 80
+Bus 81
+Bus 82
+Bus 83
+Bus 84
+Bus 85
+Bus 86
+Bus 87
+Bus 88
+Bus 89
+Bus 90
+Bus 91
+Bus 92
+Bus 93
+Bus 94
+Bus 95
+Bus 96
+Bus 97
+Bus 98
+Bus 99
+Bus 100
