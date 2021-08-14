@@ -91,6 +91,13 @@ void JsonReader::PostBaseRequestsInTransportCatalogue(const json::Node& root_) {
 
 json::Array JsonReader::GetStatRequests(const json::Node& root_, const MapRenderer::RenderSettings &renderSettings,
                                         const TransportRouter::RoutingSettings& routingSettings) {
+
+    graph::DirectedWeightedGraph<double> directedWeightedGraph_(transportCatalogue_.GetAllStops().size());
+    TransportRouter transportRouter(routingSettings, transportCatalogue_);
+
+    transportRouter.CreateGraph(directedWeightedGraph_);
+    graph::Router router(directedWeightedGraph_);
+
     json::Array array_stat_req;
     auto data_root_ = root_.AsDict();
     auto stat_requests = data_root_["stat_requests"s];
@@ -152,13 +159,10 @@ json::Array JsonReader::GetStatRequests(const json::Node& root_, const MapRender
         }
 
         if (type == "Route"s) {
-            json::Array items;
-            std::string stop_from = key["from"s].AsString();
-            std::string stop_to = key["to"s].AsString();
+            std::string_view stop_from = key["from"s].AsString();
+            std::string_view stop_to = key["to"s].AsString();
 
-            TransportRouter transportRouter(transportCatalogue_.GetAllStops().size(), routingSettings);
-            transportRouter.CreateGraph(transportCatalogue_, stop_from, stop_to);
-            auto get_find_route = transportRouter.FindRoute(stop_from, stop_to);
+            auto get_find_route = requestHandler_.FindRoute(transportRouter, router, stop_from, stop_to);
             if (get_find_route == std::nullopt) {
                 json::Node dict_node_stop{json::Dict{{"request_id"s, request_id},
                                                      {"error_message"s, "not found"s}}};
@@ -166,24 +170,23 @@ json::Array JsonReader::GetStatRequests(const json::Node& root_, const MapRender
                 continue;
             }
 
-            double total_time = 0.0;
-            for (const auto& get_f_r : get_find_route.value()) {
-                json::Node item_stop{json::Dict{{"stop_name"s, get_f_r.findRoute.stop_name_},
+            json::Array items;
+            for (const auto& get_f_r : get_find_route->findRoute) {
+                json::Node item_stop{json::Dict{{"stop_name"s, get_f_r.stop_name_},
                                                 {"time"s, routingSettings.bus_wait_time_},
                                                 {"type"s, "Wait"s}}};
                 items.push_back(item_stop);
 
-                json::Node item_bus{json::Dict{{"bus"s, get_f_r.findRoute.bus_num_},
-                                                {"span_count"s, get_f_r.findRoute.span_count_},
-                                                {"time"s, get_f_r.findRoute.time_ - routingSettings.bus_wait_time_},
-                                                {"type"s, get_f_r.findRoute.type_}}};
+                json::Node item_bus{json::Dict{{"bus"s, get_f_r.bus_num_},
+                                                {"span_count"s, get_f_r.span_count_},
+                                                {"time"s, get_f_r.time_ - routingSettings.bus_wait_time_},
+                                                {"type"s, get_f_r.type_}}};
 
-                total_time += get_f_r.findRoute.time_;
                 items.push_back(item_bus);
             }
 
             json::Node dict_map{json::Dict{{"request_id"s, request_id},
-                                           {"total_time"s, total_time},
+                                           {"total_time"s, get_find_route->weight_},
                                            {"items"s, items}}};
 
             array_stat_req.push_back(dict_map);

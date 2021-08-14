@@ -26,7 +26,6 @@ namespace json_reader {
         void PostBaseRequestsInTransportCatalogue(const json::Node& root_);
 
         std::optional<renderer::MapRenderer::RenderSettings> ParseRenderSettings(const json::Node& root_);
-
         std::optional<transport_router::TransportRouter::RoutingSettings> routingSettings(const json::Node& root_);
 
         json::Array GetStatRequests(const json::Node& root_, const renderer::MapRenderer::RenderSettings &renderSettings,

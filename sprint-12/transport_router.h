@@ -3,6 +3,7 @@
 #include <string_view>
 #include <string>
 #include <map>
+#include <set>
 #include <unordered_map>
 
 #include "graph.h"
@@ -24,22 +25,21 @@ namespace transport_router {
             std::string_view bus_num;
             std::string_view stop_from;
             std::string_view stop_to;
-            graph::VertexId stop_from_id;
-            graph::VertexId stop_to_id;
             double width = 0.0;
             int span_count = 0;
         };
 
-        template <typename Weight>
-        explicit TransportRouter(Weight vertex_size, const TransportRouter::RoutingSettings &routingSettings)
-                : directedWeightedGraph_(vertex_size),
-                  routingSettings_(routingSettings) {
+        explicit TransportRouter(const TransportRouter::RoutingSettings& routingSettings,
+                                 transport_catalogue::TransportCatalogue& transportCatalogue)
+                : routingSettings_(routingSettings), transportCatalogue_(transportCatalogue) {
         }
 
-        void CreateGraph(transport_catalogue::TransportCatalogue& transportCatalogue, std::string_view stop_from, std::string_view stop_to);
-        void AddEdges(std::string_view bus_num, std::string_view stop_from, std::string_view stop_to, int distance, int span_count);
+        void CreateGraph(graph::DirectedWeightedGraph<double>& directedWeightedGraph);
+        std::set<const transport_catalogue::Bus*> AddAllBusRoute();
+        void AddAllVertexStop();
+        void AddEdges(graph::DirectedWeightedGraph<double>& directedWeightedGraph, const GraphInfoStops& graphInfoStops);
 
-        struct FindRoute{
+        struct DataBuild{
             std::string bus_num_;
             std::string stop_name_;
             int span_count_ = 0;
@@ -49,10 +49,10 @@ namespace transport_router {
 
         struct ResponseFindRoute {
             double weight_ = 0.0;
-            FindRoute findRoute;
+            std::vector<DataBuild> findRoute;
         };
 
-        std::optional<std::vector<ResponseFindRoute>> FindRoute(std::string_view stop_from, std::string_view stop_to);
+        std::optional<ResponseFindRoute> FindRoute(const graph::Router<double>& router, std::string_view stop_from, std::string_view stop_to) const;
 
     private:
         enum ItemType {
@@ -60,7 +60,7 @@ namespace transport_router {
             Stop
         };
 
-        std::string getItemType(ItemType itemType) {
+        std::string getItemType(ItemType itemType) const {
             if (itemType == Bus)
                 return "Bus"s;
             if (itemType == Stop)
@@ -68,8 +68,8 @@ namespace transport_router {
             return "failed item type"s;
         }
 
-        graph::DirectedWeightedGraph<double> directedWeightedGraph_;
         const RoutingSettings routingSettings_;
+        transport_catalogue::TransportCatalogue& transportCatalogue_;
 
         std::vector<GraphInfoStops> data_;
         std::unordered_map<std::string, graph::VertexId> stop_name_vertex_id_;

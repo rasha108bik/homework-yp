@@ -7,8 +7,10 @@
 #include <vector>
 
 #include "transport_catalogue.h"
+#include "transport_router.h"
 #include "map_renderer.h"
 #include "svg.h"
+#include "graph.h"
 
 /*
  * Здесь можно было бы разместить код обработчика запросов к базе, содержащего логику, которую не
@@ -60,10 +62,25 @@ namespace request_handler {
         RequestHandler::GetCoordinateStops GetStopsWithRoute(const std::vector<std::pair<std::string, bool>>& stops);
         std::string RenderMap(svg::Document& doc, const RequestHandler::GetCoordinateStops& get_inform, const renderer::MapRenderer::RenderSettings &renderSettings) const;
 
+        template <typename Weight>
+        std::optional<transport_router::TransportRouter::ResponseFindRoute> FindRoute(const transport_router::TransportRouter& transportRouter,
+                                                                                      const graph::Router<Weight>& router,
+                                                                                      std::string_view stop_from,
+                                                                                      std::string_view stop_to) const;
+
     private:
         // RequestHandler использует агрегацию объектов "Транспортный Справочник" и "Визуализатор Карты"
         transport_catalogue::TransportCatalogue &db_;
         renderer::MapRenderer &renderer_;
     };
+
+    template<typename Weight>
+    std::optional<transport_router::TransportRouter::ResponseFindRoute>
+    RequestHandler::FindRoute(const transport_router::TransportRouter& transportRouter,
+                              const graph::Router<Weight> &router,
+                              std::string_view stop_from,
+                              std::string_view stop_to) const {
+        return transportRouter.FindRoute(router, stop_from, stop_to);
+    }
 
 }

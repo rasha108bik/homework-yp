@@ -15,17 +15,17 @@ namespace renderer {
     class MapRenderer {
     public:
         struct RenderSettings {
-            double width;
-            double height;
-            double padding;
-            double stop_radius;
-            double line_width;
-            int bus_label_font_size;
-            std::pair<double, double> bus_label_offset;
-            int stop_label_font_size;
-            std::pair<double, double> stop_label_offset;
+            double width = 0.0;
+            double height = 0.0;
+            double padding = 0.0;
+            double stop_radius = 0.0;
+            double line_width = 0.0;
+            int bus_label_font_size = 0;
+            std::pair<double, double> bus_label_offset = {0.0, 0.0};
+            int stop_label_font_size = 0;
+            std::pair<double, double> stop_label_offset = {0.0, 0.0};
             svg::Color underlayer_color;
-            double underlayer_width;
+            double underlayer_width = 0.0;
             std::vector<svg::Color> color_palette;
         };
 
