@@ -1,0 +1,101 @@
+  {
+    "base_requests": [
+      {
+        "type": "Bus",
+        "name": "227",
+        "stops": ["Казанский вокзал", "Парк культуры", "Аминьевское шоссе", "Казанский вокзал"],
+        "is_roundtrip": true
+      },
+      {
+        "type": "Bus",
+        "name": "114",
+        "stops": ["Морской вокзал", "Ривьерский мост", "Морской вокзал"],
+        "is_roundtrip": true
+      },
+      {
+        "type": "Bus",
+        "name": "61",
+        "stops": [],
+        "is_roundtrip": false
+      },
+      {
+        "type": "Bus",
+        "name": "73A",
+        "stops": ["Смоленская", "Парк культуры", "Кунцевская"],
+        "is_roundtrip": false
+      },
+      {
+        "type": "Stop",
+        "name": "Ривьерский мост",
+        "latitude": 0.43,
+        "longitude": 0.9,
+        "road_distances": {"Аминьевское шоссе": 50000}
+      },
+      {
+        "type": "Stop",
+        "name": "Аминьевское шоссе",
+        "latitude": 0.13,
+        "longitude": 0.59,
+        "road_distances": {"Ривьерский мост": 50000}
+      },
+      {
+        "type": "Stop",
+        "name": "Казанский вокзал",
+        "latitude": 0.73,
+        "longitude": 0.19,
+        "road_distances": {"Морской вокзал": 48000, "Аминьевское шоссе": 85000, "Ривьерский мост": 90000}
+      },
+      {
+        "type": "Stop",
+        "name": "Морской вокзал",
+        "latitude": 0.43,
+        "longitude": -0.12,
+        "road_distances": {"Ривьерский мост": 115000}
+      },
+      {
+        "type": "Stop",
+        "name": "Парк культуры",
+        "latitude": 0.27,
+        "longitude": 0.34,
+        "road_distances": {"Аминьевское шоссе": 32000, "Казанский вокзал": 55000}
+      },
+      {
+        "type": "Stop",
+        "name": "Смоленская",
+        "latitude": -0.1,
+        "longitude": -0.1,
+        "road_distances": {"Парк культуры": 65000}
+      },
+      {
+        "type": "Stop",
+        "name": "Кунцевская",
+        "latitude": 0.77,
+        "longitude": 0.74,
+        "road_distances": {"Смоленская": 140000}
+      },
+      {
+        "type": "Stop",
+        "name": "Очень далекая",
+        "latitude": 89.0,
+        "longitude": 89.0,
+        "road_distances": {"Ривьерский мост": 10000000}
+      }
+    ],
+    "render_settings": {
+      "width": 500,
+      "height": 500,
+      "padding": 30,
+      "stop_radius": 5,
+      "line_width": 14,
+      "bus_label_font_size": 20,
+      "bus_label_offset": [7, 15],
+      "stop_label_font_size": 20,
+      "stop_label_offset": [7, -3],
+      "underlayer_color": [255,255,255,0.85],
+      "underlayer_width": 3,
+      "color_palette": ["green", [255,160,0]]
+    },
+    "stat_requests": [
+      { "id": 1, "type": "Map" }
+    ]
+  }
