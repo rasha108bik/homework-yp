@@ -294,7 +294,7 @@ namespace ASTImpl {
             }
 
         public:
-            void exitUnaryOp(FormulaParser::UnaryOpContext* ctx) override {
+            void ExitUnaryOp(FormulaParser::UnaryOpContext* ctx) override {
                 assert(args_.size() >= 1);
 
                 auto operand = std::move(args_.back());
@@ -311,7 +311,7 @@ namespace ASTImpl {
                 args_.back() = std::move(node);
             }
 
-            void exitLiteral(FormulaParser::LiteralContext* ctx) override {
+            void ExitLiteral(FormulaParser::LiteralContext* ctx) override {
                 double value = 0;
                 auto valueStr = ctx->NUMBER()->getSymbol()->getText();
                 std::istringstream in(valueStr);
@@ -324,7 +324,7 @@ namespace ASTImpl {
                 args_.push_back(std::move(node));
             }
 
-            void exitCell(FormulaParser::CellContext* ctx) override {
+            void ExitCell(FormulaParser::CellContext* ctx) override {
                 auto value_str = ctx->CELL()->getSymbol()->getText();
                 auto value = Position::FromString(value_str);
                 if (!value.IsValid()) {
@@ -336,7 +336,7 @@ namespace ASTImpl {
                 args_.push_back(std::move(node));
             }
 
-            void exitBinaryOp(FormulaParser::BinaryOpContext* ctx) override {
+            void ExitBinaryOp(FormulaParser::BinaryOpContext* ctx) override {
                 assert(args_.size() >= 2);
 
                 auto rhs = std::move(args_.back());
@@ -360,7 +360,7 @@ namespace ASTImpl {
                 args_.back() = std::move(node);
             }
 
-            void visitErrorNode(antlr4::tree::ErrorNode* node) override {
+            void VisitErrorNode(antlr4::tree::ErrorNode* node) override {
                 throw ParsingError("Error when parsing: " + node->getSymbol()->getText());
             }
 
@@ -371,7 +371,7 @@ namespace ASTImpl {
 
         class BailErrorListener : public antlr4::BaseErrorListener {
         public:
-            void syntaxError(antlr4::Recognizer* /* recognizer */, antlr4::Token* /* offendingSymbol */,
+            void SyntaxError(antlr4::Recognizer* /* recognizer */, antlr4::Token* /* offendingSymbol */,
                              size_t /* line */, size_t /* charPositionInLine */, const std::string& msg,
                              std::exception_ptr /* e */
                              ) override {
